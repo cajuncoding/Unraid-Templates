@@ -22,7 +22,7 @@ This docker container provides access to OpenRGB with a GUI in a browser enablin
   <Requires>NOTE: For Unraid it seems that the container must be run in Privelege mode as well as using the Root User! Any attempts to restrict the access resulted in OpenRGB not finding my devices on my MSI B450 Mortar Titanium motherboard.&#xD;
 &#xD;
 The default values for USER_ID &amp;amp; GROUP_ID should normally both be 0 (Zero) which map to the root user of Unraid. If you have issues you can run the `id root` command in your Unraid terminal to confirm the correct values for root user and update them if necessary.</Requires>
-  <Category/>
+  <Category>Tools: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:5801]/</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/cajuncoding/OpenRGB-GUI-Unraid/blob/main/OpenRGB.png?raw=true</Icon>
