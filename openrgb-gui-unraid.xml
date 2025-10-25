@@ -22,7 +22,9 @@ This docker container provides access to OpenRGB with a GUI in a browser enablin
   <Requires>NOTE: For Unraid it seems that the container must be run in Privelege mode as well as using the Root User! Any attempts to restrict the access resulted in OpenRGB not finding my devices on my MSI B450 Mortar Titanium motherboard.&#xD;
 &#xD;
 The default values for USER_ID &amp;amp; GROUP_ID should normally both be 0 (Zero) which map to the root user of Unraid. If you have issues you can run the `id root` command in your Unraid terminal to confirm the correct values for root user and update them if necessary.</Requires>
-  <Category>Tools: Status:Beta</Category>
+  <Beta>False</Beta>
+  <Category>Tools:</Category>
+  <Date>2025-10-24</Date>
   <WebUI>http://[IP]:[PORT:5801]/</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/cajuncoding/OpenRGB-GUI-Unraid/blob/main/OpenRGB.png?raw=true</Icon>
@@ -36,6 +38,6 @@ The default values for USER_ID &amp;amp; GROUP_ID should normally both be 0 (Zer
   <Config Name="Config" Target="/config" Default="" Mode="rw" Description="AppData Config Mapping" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/openrgb-gui-unraid</Config>
   <Config Name="USER ID" Target="USER_ID" Default="" Mode="" Description="User Id of the Root User" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="GROUP ID" Target="GROUP_ID" Default="" Mode="" Description="Group Id of the Root User" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="PLUGIN URLS (Pipe Delimited)" Target="PLUGIN_URLS" Default="" Mode="" Description="Pipe '|' Delimited list of Plugin Urls to initialize." Type="Variable" Display="always" Required="false" Mask="false">https://codeberg.org/OpenRGB/OpenRGBEffectsPlugin/releases/download/release_0.9/OpenRGBEffectsPlugin_0.9_Bookworm_64_f1411e1.so</Config>
+  <Config Name="PLUGIN URLS (Pipe Delimited)" Target="PLUGIN_URLS" Default="" Mode="" Description="Optional Pipe '|' Delimited list of Plugin Urls to initialize. The image internally will initialize the default Effects Plugin from OpenRGB that is appropriate for the version; this is only an override for custom plugins. Specifying a value here will prevent all defualt Urls from being initialized but will not remove them after it has already run once." Type="Variable" Display="always" Required="false" Mask="false" />
   <TailscaleStateDir/>
 </Container>
