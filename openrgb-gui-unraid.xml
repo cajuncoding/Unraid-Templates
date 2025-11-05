@@ -25,7 +25,7 @@ The default values for USER_ID &amp;amp; GROUP_ID should normally both be 0 (Zer
   <Beta>False</Beta>
   <Category>Tools:</Category>
   <Date>2025-10-24</Date>
-  <WebUI>http://[IP]:[PORT:5801]/</WebUI>
+  <WebUI>http://[IP]:[PORT:5800]/</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/cajuncoding/OpenRGB-GUI-Unraid/blob/main/OpenRGB.png?raw=true</Icon>
   <ExtraParams/>
