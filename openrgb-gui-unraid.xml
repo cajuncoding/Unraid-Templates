@@ -33,8 +33,8 @@ The default values for USER_ID &amp;amp; GROUP_ID should normally both be 0 (Zer
   <CPUset/>
   <DonateText>Buy me a Coffee!</DonateText>
   <DonateLink>https://buymeacoffee.com/cajuncoding</DonateLink>
-  <Config Name="TigerVNC" Target="5900" Default="" Mode="tcp" Description="Direct VNC GUI" Type="Port" Display="always" Required="false" Mask="false">5901</Config>
-  <Config Name="WebVNC" Target="5800" Default="" Mode="tcp" Description="Web based GUI" Type="Port" Display="always" Required="false" Mask="false">5801</Config>
+  <Config Name="TigerVNC" Target="5900" Default="" Mode="tcp" Description="Direct VNC GUI" Type="Port" Display="always" Required="false" Mask="false">5900</Config>
+  <Config Name="WebVNC" Target="5800" Default="" Mode="tcp" Description="Web based GUI" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
   <Config Name="Config" Target="/config" Default="" Mode="rw" Description="AppData Config Mapping" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/openrgb-gui-unraid</Config>
   <Config Name="USER ID" Target="USER_ID" Default="" Mode="" Description="User Id of the Root User" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="GROUP ID" Target="GROUP_ID" Default="" Mode="" Description="Group Id of the Root User" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
